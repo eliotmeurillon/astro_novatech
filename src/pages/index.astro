@@ -8,23 +8,23 @@ import Card from "../components/Card.astro";
     <section
       class="hero grid grid-cols-4 place-items-center h-[calc(100vh-5vh)] relative"
     >
-      <!-- <img
+      <img
         class="absolute -top-[1vh] h-fit -z-50"
         src="/header-bg.png"
         alt="header-bg"
-      /> -->
-      <div class="hero__content order-2">
-        <p class="hero__text uppercase">
+      />
+      <div class="hero__content order-2 text-white">
+        <p class="hero__text uppercase text-xl">
           NovaTech: votre partenaire de santé connectée
         </p>
-        <h1 class="hero__title uppercase">TRANSFORMEZ VOTRE SANTÉ.</h1>
+        <h1 class="hero__title uppercase text-7xl">TRANSFORMEZ VOTRE SANTÉ.</h1>
       </div>
       <div></div>
       <div></div>
     </section>
-    <section class="flex flex-col items-center justify-center">
-      <h1 class="text-[#2A4C45]">Bienvenue chez NovaTech</h1>
-      <p class="text-[#7A7A7A]">
+    <section class="flex flex-col items-center justify-center gap-y-4 py-4">
+      <h1 class="text-[#2A4C45] text-4xl uppercase">Bienvenue chez NovaTech</h1>
+      <p class="text-[#7A7A7A] text-2xl text-center px-32">
         Chez NovaTech, nous croyons que la technologie peut améliorer
         significativement la santé et le bien-être de chacun. C'est pourquoi
         nous avons développé une gamme de produits et services connectés conçus
@@ -35,36 +35,56 @@ import Card from "../components/Card.astro";
         <img src="/image-produits.png" alt="image-produits" />
       </div>
     </section>
-    <section class="bg-[#1F1F1F] text-white">
+    <section
+      class="flex flex-col items-center justify-center bg-[#1F1F1F] text-white text-center py-10"
+    >
       <div>
-        <h1 class="">
+        <h1 class="text-4xl uppercase">
           Notre équipe passionnée et <br /><span class="text-[#1F1F1F] bg-white"
             >Talentieuse</span
           >
         </h1>
-        <p>
+        <p class="text-base px-44">
           Nous sommes fiers de travailler avec une équipe dynamique et
           diversifiée, qui apporte une richesse de connaissances et
           d'expériences à notre entreprise. Découvrez ci-dessous quelques-uns de
           nos membres clés et ce qui les motive à faire partie de notre équipe.
         </p>
       </div>
-      <div>
-        <!-- mettre la team -->
+      <div class="flex flex-row items-center justify-center">
+        <div class="w-1 h2 rounded-full">
+          <img src="" alt="Nico" />
+        </div>
+        <div class="w-1 h2 rounded-full">
+          <img src="" alt="Nico" />
+        </div>
+        <div class="w-1 h2 rounded-full">
+          <img src="" alt="Nico" />
+        </div>
+        <div class="w-1 h2 rounded-full">
+          <img src="" alt="Nico" />
+        </div>
+        <div class="w-1 h2 rounded-full">
+          <img src="" alt="Nico" />
+        </div>
       </div>
     </section>
-    <section class="bg-[#2A4C45] text-white">
-      <p>Découvrez notre gamme complète de produits adaptés à vos besoins</p>
-      <p>Nos produits de qualité pour tous les besoins</p>
-      <div>
-        <div>
+    <section class="flex flex-col bg-[#2A4C45] text-white py-5">
+      <p class="text-xl text-center">
+        Découvrez notre gamme complète de produits adaptés à vos besoins
+      </p>
+      <p class="text-5xl text-center">
+        Nos produits de qualité pour tous les besoins
+      </p>
+      <div class="flex flex-col items-center justify-center gap-y-4 py-4">
+        <div class="flex flex-row w-3/4">
           <img src="/icon-bad.png" alt="icon-bad" />
           <div>
-            <p>
+            <p class="text-xl">
               La brosse à dents connectée qui transforme votre routine de
               brossage
             </p>
-            <p>
+            <p class="text-base">
               Notre brosse à dents connectée est conçue pour améliorer votre
               routine de brossage grâce à des fonctionnalités innovantes et à
               une technologie de pointe. Avec notre application mobile dédiée,
@@ -73,14 +93,14 @@ import Card from "../components/Card.astro";
             </p>
           </div>
         </div>
-        <div>
+        <div class="flex flex-row w-3/4">
           <img src="/icon-bal.png" alt="icon-bal" />
           <div>
-            <p>
+            <p class="text-xl">
               La balance connectée qui vous accompagne dans votre parcours de
               santé
             </p>
-            <p>
+            <p class="text-base">
               Notre balance connectée est conçue pour vous accompagner dans
               votre parcours de santé en vous offrant des données précises et en
               temps réel sur votre poids, votre masse graisseuse, votre taux de
@@ -90,11 +110,13 @@ import Card from "../components/Card.astro";
             </p>
           </div>
         </div>
-        <div>
+        <div class="flex flex-row w-3/4">
           <img src="/icon-mon.png" alt="icon-mon" />
           <div>
-            <p>La montre connectée qui vous accompagne au quotidien</p>
-            <p>
+            <p class="text-xl">
+              La montre connectée qui vous accompagne au quotidien
+            </p>
+            <p class="text-base">
               Notre montre connectée est conçue pour vous accompagner au
               quotidien en vous offrant un accès facile à vos notifications, à
               votre musique, à votre GPS et à bien d'autres fonctionnalités
@@ -109,26 +131,26 @@ import Card from "../components/Card.astro";
       </div>
     </section>
     <section>
-      <div class="flex flex-row items-center justify-center">
+      <div class="flex flex-row items-center justify-center py-10">
         <div class="flex flex-col items-center justify-center">
           <img src="/illu-bad.png" alt="img-bad" />
           <p>BROSSE À DENTS CONNECTÉ</p>
-          <button>Découvrir</button>
+          <button class="bg-[#2A4C45] text-white px-2 py-1">Découvrir</button>
         </div>
         <div class="flex flex-col items-center justify-center">
           <img src="/illu-bal.png" alt="img-bal" />
           <p>BALANCE CONNECTÉ</p>
-          <button>Découvrir</button>
+          <button class="bg-[#2A4C45] text-white px-2 py-1">Découvrir</button>
         </div>
         <div class="flex flex-col items-center justify-center">
           <img src="/illu-mon.png" alt="img-mon" />
           <p>MONTRE CONNECTÉ</p>
-          <button>Découvrir</button>
+          <button class="bg-[#2A4C45] text-white px-2 py-1">Découvrir</button>
         </div>
       </div>
     </section>
-    <section>
-      <h1 class="">Dernières Nouvelles</h1>
+    <section class="text-center">
+      <h1 class="text-4xl">Dernières Nouvelles</h1>
       <div class="flex flex-row items-center justify-center">
         <div class="flex flex-col items-center justify-center">
           <img src="/photo-bad.png" alt="photo-bad" />
